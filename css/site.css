@@ -211,6 +211,10 @@ body {
             top: 25px;
             font-size: 1.2rem;
             color: #523D9D; }
+          body .tabs .tab .group input:indeterminate ~ label {
+            top: 25px;
+            font-size: 1.2rem;
+            color: #523D9D; }
           body .tabs .tab .group input:focus {
             outline: none; }
             body .tabs .tab .group input:focus ~ .bar:before {

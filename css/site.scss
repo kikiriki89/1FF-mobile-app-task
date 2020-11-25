@@ -313,6 +313,12 @@ body {
                         color: $purple;
                     }
 
+                    &:indeterminate ~ label {
+                        top: 25px;
+                        font-size: 1.2rem;
+                        color: $purple;
+                    }
+
                     &:focus {
                         outline: none;
 
