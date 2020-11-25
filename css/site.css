@@ -208,11 +208,7 @@ body {
           background: transparent;
           border-bottom: 1px solid #523D9D; }
           body .tabs .tab .group input:valid ~ label {
-            top: 25px;
-            font-size: 1.2rem;
-            color: #523D9D; }
-          body .tabs .tab .group input:indeterminate ~ label {
-            top: 25px;
+            top: 15px;
             font-size: 1.2rem;
             color: #523D9D; }
           body .tabs .tab .group input:focus {
@@ -222,7 +218,7 @@ body {
             body .tabs .tab .group input:focus ~ .bar:after {
               width: 50%; }
           body .tabs .tab .group input:focus ~ label {
-            top: 25px;
+            top: 15px;
             font-size: 1.2rem;
             color: #523D9D; }
       body .tabs .tab .bar {

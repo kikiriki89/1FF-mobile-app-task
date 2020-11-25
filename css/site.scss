@@ -308,13 +308,7 @@ body {
                     border-bottom: 1px solid $purple;
 
                     &:valid ~ label {
-                        top: 25px;
-                        font-size: 1.2rem;
-                        color: $purple;
-                    }
-
-                    &:indeterminate ~ label {
-                        top: 25px;
+                        top: 15px;
                         font-size: 1.2rem;
                         color: $purple;
                     }
@@ -333,7 +327,7 @@ body {
                     }
 
                     &:focus ~ label {
-                        top: 25px;
+                        top: 15px;
                         font-size: 1.2rem;
                         color: $purple;
                     }
