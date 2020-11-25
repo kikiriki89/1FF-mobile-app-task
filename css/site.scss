@@ -1,0 +1,435 @@
+﻿@font-face {
+    font-family: 'ITCAvantGardeStd-Bk';
+    src: url('../font/ITCAvantGardeStd-Bk.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ITCAvantGardeStd-Bold';
+    src: url('../font/ITCAvantGardeStd-Bold.otf') format('opentype');
+}
+
+$white: #fff;
+$gray: #ECECEC;
+$shadowgray: #AAA5A5;
+$lightpurple: #CCBEFF;
+$buttonhoverpurple: #9880ec;
+$purple: #523D9D;
+$dark: #444;
+$disable: #9D96B6;
+$defaultfontcolor: #707070;
+$breakpointtablet: 768px;
+$breakpointdesktop: 1440px;
+
+
+body {
+    background: url('../images/background.png') 100%;
+    font-family: ITCAvantGardeStd-Bk;
+    position: relative;
+    color: $defaultfontcolor;
+
+    strong {
+        color: $purple;
+        font-family: ITCAvantGardeStd-Bold;
+    }
+
+    button {
+        border: none;
+
+        &:hover {
+            outline: none;
+        }
+    }
+
+    .back-button {
+        display: flex;
+        flex-direction: column-reverse;
+        top: 0;
+        left: 0;
+        width: 9vw;
+        height: 8vh;
+        background: $lightpurple 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 10px $shadowgray;
+
+        &:hover {
+            box-shadow: inset 3px 0px 7px $buttonhoverpurple;
+        }
+
+        img {
+            align-self: center;
+            width: 2vw;
+            margin-bottom: 10px;
+        }
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3vh;
+
+        h1 {
+            margin: 0;
+            padding: 0 10px;
+            width: 91%;
+            font-size: 1.8rem;
+            text-align: center;
+            line-height: 2.7rem;
+        }
+    }
+
+    .step5 {
+        .block1, .block2, .block3, .block4, .block5 {
+            background-color: $lightpurple;
+            box-shadow: 0px 3px 6px $shadowgray;
+            -webkit-box-shadow: 0px 3px 10px $shadowgray;
+        }
+
+        .block6, .block7, .block8 {
+            background-color: $gray;
+        }
+    }
+
+    .step8 {
+        .block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8 {
+            background-color: $lightpurple;
+            box-shadow: 0px 3px 6px $shadowgray;
+            -webkit-box-shadow: 0px 3px 10px $shadowgray;
+        }
+    }
+
+    .main {
+        width: 88%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .progress {
+            padding: 0 2%;
+            height: 2px;
+            position: absolute;
+            width: 71%;
+            top: 6vh;
+            left: 15vw;
+            box-shadow: none;
+            z-index: -1;
+            background-color: $gray;
+
+
+            .progress-bar {
+                color: $gray;
+            }
+        }
+
+        .block-ring {
+            align-self: flex-end;
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            padding: 0;
+        }
+
+        .circulo {
+            background-color: $gray;
+        }
+
+        .activecirculo {
+            border-radius: 50%;
+            height: 5px;
+            width: 5px;
+            background-color: $purple;
+            margin: 10px;
+        }
+    }
+
+    .step-numbers {
+        text-align: center;
+        font-size: 1.6rem;
+        color: $purple;
+        padding: 5% 5% 0;
+    }
+
+    .custom-checkboxes {
+        padding: 0 11.5vw;
+
+        .container {
+            color: $dark;
+            margin-bottom: 1.2em;
+            display: block;
+            position: relative;
+            padding-left: 3em;
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-weight: normal;
+
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+            input:checked ~ .checkmark {
+                background-color: $purple;
+
+                &:after {
+                    display: block;
+                }
+            }
+        }
+
+        .checkmark {
+            position: absolute;
+            top: -5px;
+            left: 0;
+            height: 1.8em;
+            width: 1.8em;
+            border: 1px solid $purple;
+            border-radius: 5px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: 8px;
+                top: 1px;
+                width: .6em;
+                height: 1.3em;
+                border: solid #fff;
+                border-width: 0 1px 1px 0;
+                -webkit-transform: rotate(35deg);
+                -ms-transform: rotate(35deg);
+                transform: rotate(35deg);
+            }
+        }
+    }
+
+    .button {
+
+        button {
+            padding: 15px;
+            width: 78vw;
+            height: 2.3em;
+            font-size: 2.5rem;
+            border-radius: 5px;
+            margin: 5% 11% 0;
+            justify-content: flex-end;
+            background: $purple;
+            color: $white;
+
+            &:hover {
+                background: $lightpurple;
+            }
+        }
+
+        .disabled {
+            background: $disable;
+
+            &:hover {
+                background: $disable;
+            }
+        }
+    }
+
+    .baloon {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 73%;
+        left: 0%;
+        background: url(../images/Ellipse.png) no-repeat;
+        background-size: 100%;
+        z-index: -1;
+    }
+
+    .tabs {
+        margin: 2vh auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 50vh;
+        padding: 0 11vw;
+
+
+        .tab {
+            float: left;
+            display: block;
+            width: 50%;
+            list-style-type: none;
+
+
+            & > input[type="radio"] {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            & > label {
+                display: block;
+                padding: 10px 21px 7px;
+                font-size: 1.5rem;
+                text-align: center;
+                font-weight: normal;
+                cursor: pointer;
+                position: relative;
+                color: $dark;
+                background: $gray;
+            }
+
+            & > .tab1 {
+                border-radius: 10px 0 0 10px;
+            }
+
+            & > .tab2 {
+                border-radius: 0 10px 10px 0;
+            }
+
+            .group {
+                position: relative;
+                margin-bottom: 0;
+
+                label {
+                    color: $shadowgray;
+                    font-size: 1.5rem;
+                    font-weight: normal;
+                    position: absolute;
+                    pointer-events: none;
+                    top: 40px;
+                    transition: 0.2s ease all;
+                    -moz-transition: 0.2s ease all;
+                    -webkit-transition: 0.2s ease all;
+                }
+
+                input {
+                    font-size: 2rem;
+                    padding: 6vh 0 0 0;
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    background: transparent;
+                    border-bottom: 1px solid $purple;
+
+                    &:valid ~ label {
+                        top: 25px;
+                        font-size: 1.2rem;
+                        color: $purple;
+                    }
+
+                    &:focus {
+                        outline: none;
+
+
+                        & ~ .bar:before {
+                            width: 50%;
+                        }
+
+                        & ~ .bar:after {
+                            width: 50%;
+                        }
+                    }
+
+                    &:focus ~ label {
+                        top: 25px;
+                        font-size: 1.2rem;
+                        color: $purple;
+                    }
+                }
+            }
+
+            .bar {
+                position: relative;
+                display: block;
+
+                &:before {
+                    left: 50%;
+                    content: '';
+                    height: 1px;
+                    width: 0;
+                    bottom: 1px;
+                    position: absolute;
+                    background: $purple;
+                    transition: 0.2s ease all;
+                    -moz-transition: 0.2s ease all;
+                    -webkit-transition: 0.2s ease all;
+                }
+
+                &:after {
+                    right: 50%;
+                    content: '';
+                    height: 1px;
+                    width: 0;
+                    bottom: 1px;
+                    position: absolute;
+                    background: $purple;
+                    transition: 0.2s ease all;
+                    -moz-transition: 0.2s ease all;
+                    -webkit-transition: 0.2s ease all;
+                }
+            }
+
+            .highlight {
+                position: absolute;
+                height: 60%;
+                width: 100px;
+                top: 25%;
+                left: 0;
+                pointer-events: none;
+                opacity: 0.5;
+            }
+
+
+            .content {
+                z-index: 0;
+                overflow: hidden;
+                padding: 5vh 11vw;
+                width: 100vw;
+                position: absolute;
+                top: 27px;
+                left: 0;
+                opacity: 0;
+                transition: opacity 400ms ease-out;
+            }
+        }
+
+        & > .tab > [id^="tab"]:checked + label {
+            top: 0;
+            background: $purple;
+            color: $white;
+            box-shadow: 0px 3px 6px $shadowgray;
+            -webkit-box-shadow: 0px 3px 10px $shadowgray;
+        }
+
+        & > .tab > [id^="tab"]:checked ~ [id^="tab-content"] {
+            z-index: 1; /* or display: block; */
+            opacity: 1;
+            transition: opacity 400ms ease-out;
+        }
+    }
+}
+
+
+@media screen and (min-width:$breakpointtablet) {
+    body .main .progress {
+        top: 5.9vh;
+        width: 69%;
+        left: 18vw;
+    }
+
+    body .title h1 {
+        width: 69%;
+    }
+
+    body .tabs .tab .content {
+        padding: 3vh 11vw;
+    }
+}
+
+@media (max-width:$breakpointtablet) and (orientation: landscape) {
+    body .tabs {
+        height: 115vh;
+    }
+}
+
+@media (min-width:$breakpointdesktop){
+    body .button button {
+        margin: 2% 11% 0;
+    }
+}

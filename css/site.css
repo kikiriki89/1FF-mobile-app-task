@@ -1,0 +1,295 @@
+﻿@font-face {
+  font-family: 'ITCAvantGardeStd-Bk';
+  src: url("../font/ITCAvantGardeStd-Bk.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'ITCAvantGardeStd-Bold';
+  src: url("../font/ITCAvantGardeStd-Bold.otf") format("opentype"); }
+
+body {
+  background: url("../images/background.png") 100%;
+  font-family: ITCAvantGardeStd-Bk;
+  position: relative;
+  color: #707070; }
+  body strong {
+    color: #523D9D;
+    font-family: ITCAvantGardeStd-Bold; }
+  body button {
+    border: none; }
+    body button:hover {
+      outline: none; }
+  body .back-button {
+    display: flex;
+    flex-direction: column-reverse;
+    top: 0;
+    left: 0;
+    width: 9vw;
+    height: 8vh;
+    background: #CCBEFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 10px #AAA5A5; }
+    body .back-button:hover {
+      box-shadow: inset 3px 0px 7px #9880ec; }
+    body .back-button img {
+      align-self: center;
+      width: 2vw;
+      margin-bottom: 10px; }
+  body .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh; }
+    body .title h1 {
+      margin: 0;
+      padding: 0 10px;
+      width: 91%;
+      font-size: 1.8rem;
+      text-align: center;
+      line-height: 2.7rem; }
+  body .step5 .block1, body .step5 .block2, body .step5 .block3, body .step5 .block4, body .step5 .block5 {
+    background-color: #CCBEFF;
+    box-shadow: 0px 3px 6px #AAA5A5;
+    -webkit-box-shadow: 0px 3px 10px #AAA5A5; }
+  body .step5 .block6, body .step5 .block7, body .step5 .block8 {
+    background-color: #ECECEC; }
+  body .step8 .block1, body .step8 .block2, body .step8 .block3, body .step8 .block4, body .step8 .block5, body .step8 .block6, body .step8 .block7, body .step8 .block8 {
+    background-color: #CCBEFF;
+    box-shadow: 0px 3px 6px #AAA5A5;
+    -webkit-box-shadow: 0px 3px 10px #AAA5A5; }
+  body .main {
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    body .main .progress {
+      padding: 0 2%;
+      height: 2px;
+      position: absolute;
+      width: 71%;
+      top: 6vh;
+      left: 15vw;
+      box-shadow: none;
+      z-index: -1;
+      background-color: #ECECEC; }
+      body .main .progress .progress-bar {
+        color: #ECECEC; }
+    body .main .block-ring {
+      align-self: flex-end;
+      border-radius: 50%;
+      height: 25px;
+      width: 25px;
+      padding: 0; }
+    body .main .circulo {
+      background-color: #ECECEC; }
+    body .main .activecirculo {
+      border-radius: 50%;
+      height: 5px;
+      width: 5px;
+      background-color: #523D9D;
+      margin: 10px; }
+  body .step-numbers {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #523D9D;
+    padding: 5% 5% 0; }
+  body .custom-checkboxes {
+    padding: 0 11.5vw; }
+    body .custom-checkboxes .container {
+      color: #444;
+      margin-bottom: 1.2em;
+      display: block;
+      position: relative;
+      padding-left: 3em;
+      cursor: pointer;
+      font-size: 1.5rem;
+      font-weight: normal; }
+      body .custom-checkboxes .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0; }
+      body .custom-checkboxes .container input:checked ~ .checkmark {
+        background-color: #523D9D; }
+        body .custom-checkboxes .container input:checked ~ .checkmark:after {
+          display: block; }
+    body .custom-checkboxes .checkmark {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      height: 1.8em;
+      width: 1.8em;
+      border: 1px solid #523D9D;
+      border-radius: 5px; }
+      body .custom-checkboxes .checkmark:after {
+        content: "";
+        position: absolute;
+        left: 8px;
+        top: 1px;
+        width: .6em;
+        height: 1.3em;
+        border: solid #fff;
+        border-width: 0 1px 1px 0;
+        -webkit-transform: rotate(35deg);
+        -ms-transform: rotate(35deg);
+        transform: rotate(35deg); }
+  body .button button {
+    padding: 15px;
+    width: 78vw;
+    height: 2.3em;
+    font-size: 2.5rem;
+    border-radius: 5px;
+    margin: 5% 11% 0;
+    justify-content: flex-end;
+    background: #523D9D;
+    color: #fff; }
+    body .button button:hover {
+      background: #CCBEFF; }
+  body .button .disabled {
+    background: #9D96B6; }
+    body .button .disabled:hover {
+      background: #9D96B6; }
+  body .baloon {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 73%;
+    left: 0%;
+    background: url(../images/Ellipse.png) no-repeat;
+    background-size: 100%;
+    z-index: -1; }
+  body .tabs {
+    margin: 2vh auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    padding: 0 11vw; }
+    body .tabs .tab {
+      float: left;
+      display: block;
+      width: 50%;
+      list-style-type: none; }
+      body .tabs .tab > input[type="radio"] {
+        position: absolute;
+        top: -9999px;
+        left: -9999px; }
+      body .tabs .tab > label {
+        display: block;
+        padding: 10px 21px 7px;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: normal;
+        cursor: pointer;
+        position: relative;
+        color: #444;
+        background: #ECECEC; }
+      body .tabs .tab > .tab1 {
+        border-radius: 10px 0 0 10px; }
+      body .tabs .tab > .tab2 {
+        border-radius: 0 10px 10px 0; }
+      body .tabs .tab .group {
+        position: relative;
+        margin-bottom: 0; }
+        body .tabs .tab .group label {
+          color: #AAA5A5;
+          font-size: 1.5rem;
+          font-weight: normal;
+          position: absolute;
+          pointer-events: none;
+          top: 40px;
+          transition: 0.2s ease all;
+          -moz-transition: 0.2s ease all;
+          -webkit-transition: 0.2s ease all; }
+        body .tabs .tab .group input {
+          font-size: 2rem;
+          padding: 6vh 0 0 0;
+          display: block;
+          width: 100%;
+          border: none;
+          background: transparent;
+          border-bottom: 1px solid #523D9D; }
+          body .tabs .tab .group input:valid ~ label {
+            top: 25px;
+            font-size: 1.2rem;
+            color: #523D9D; }
+          body .tabs .tab .group input:focus {
+            outline: none; }
+            body .tabs .tab .group input:focus ~ .bar:before {
+              width: 50%; }
+            body .tabs .tab .group input:focus ~ .bar:after {
+              width: 50%; }
+          body .tabs .tab .group input:focus ~ label {
+            top: 25px;
+            font-size: 1.2rem;
+            color: #523D9D; }
+      body .tabs .tab .bar {
+        position: relative;
+        display: block; }
+        body .tabs .tab .bar:before {
+          left: 50%;
+          content: '';
+          height: 1px;
+          width: 0;
+          bottom: 1px;
+          position: absolute;
+          background: #523D9D;
+          transition: 0.2s ease all;
+          -moz-transition: 0.2s ease all;
+          -webkit-transition: 0.2s ease all; }
+        body .tabs .tab .bar:after {
+          right: 50%;
+          content: '';
+          height: 1px;
+          width: 0;
+          bottom: 1px;
+          position: absolute;
+          background: #523D9D;
+          transition: 0.2s ease all;
+          -moz-transition: 0.2s ease all;
+          -webkit-transition: 0.2s ease all; }
+      body .tabs .tab .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5; }
+      body .tabs .tab .content {
+        z-index: 0;
+        overflow: hidden;
+        padding: 5vh 11vw;
+        width: 100vw;
+        position: absolute;
+        top: 27px;
+        left: 0;
+        opacity: 0;
+        transition: opacity 400ms ease-out; }
+    body .tabs > .tab > [id^="tab"]:checked + label {
+      top: 0;
+      background: #523D9D;
+      color: #fff;
+      box-shadow: 0px 3px 6px #AAA5A5;
+      -webkit-box-shadow: 0px 3px 10px #AAA5A5; }
+    body .tabs > .tab > [id^="tab"]:checked ~ [id^="tab-content"] {
+      z-index: 1;
+      /* or display: block; */
+      opacity: 1;
+      transition: opacity 400ms ease-out; }
+
+@media screen and (min-width: 768px) {
+  body .main .progress {
+    top: 5.9vh;
+    width: 69%;
+    left: 18vw; }
+  body .title h1 {
+    width: 69%; }
+  body .tabs .tab .content {
+    padding: 3vh 11vw; } }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  body .tabs {
+    height: 115vh; } }
+
+@media (min-width: 1440px) {
+  body .button button {
+    margin: 2% 11% 0; } }
