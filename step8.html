@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.min.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div class="baloon">
+    </div>
+    <div class="step8">
+        <div class="main">
+            <a href="step5.html">
+                <div class="back-button">
+                    <img src="images/arrow-left.png" />
+                </div>
+            </a>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="block-ring block1">
+                <div class="text-center activecirculo">
+                </div>
+            </div>
+            <div class="block-ring block2">
+                <div class="text-center activecirculo">
+                </div>
+            </div>
+            <div class="block-ring block3">
+                <div class="text-center activecirculo">
+                </div>
+            </div>
+            <div class="block-ring block4">
+                <div class="text-center activecirculo">
+                </div>
+            </div>
+            <div class="block-ring block5">
+                <div class="text-center activecirculo">
+                </div>
+            </div>
+            <div class="block-ring block6">
+                <div class="text-center activecirculo">
+                </div>
+            </div>
+            <div class="block-ring block7">
+                <div class="text-center activecirculo">
+                </div>
+            </div>
+            <div class="block-ring block8">
+                <div class="text-center activecirculo">
+                </div>
+            </div>
+
+        </div>
+        <p class="step-numbers">Step 8 of 8</p>
+        <div class="title">
+            <h1>
+                Your <strong>measurements</strong>
+            </h1>
+        </div>
+        <ul class="tabs">
+
+            <li class="tab">
+                <input type="radio" name="tabs" checked="checked" id="tab1" />
+                <label for="tab1" class="tab1">Metrics</label>
+                <div id="tab-content1" class="content">
+                    <form>
+                        <div class="group">
+                            <input type="number" tabindex="1" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Age</label>
+                        </div>
+                        <div class="group">
+                            <input type="number" tabindex="2"  required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Height</label>
+                        </div>
+                        <div class="group">
+                            <input type="number" tabindex="3"  required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Weight</label>
+                        </div>
+                        <div class="group">
+                            <input type="number" tabindex="4" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Target Weight</label>
+                        </div>
+                    </form>
+                </div>
+            </li>
+
+            <li class="tab">
+                <input type="radio" name="tabs" id="tab2" />
+                <label for="tab2" class="tab2">Imperial</label>
+                <div id="tab-content2" class="content">
+                        <form>
+                            <div class="group">
+                                <input type="number" tabindex="1" pattern="^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Age</label>
+                            </div>
+                            <div class="group">
+                                <input type="number" tabindex="2" pattern="^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Height</label>
+                            </div>
+                            <div class="group">
+                                <input type="number" tabindex="3" pattern="^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Weight</label>
+                            </div>
+                            <div class="group">
+                                <input type="number" tabindex="4" pattern="^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Target Weight</label>
+                            </div>
+                        </form>
+                </div>
+            </li>
+        </ul>
+        <div class="button">
+            <button class="disabled"> Continue</button>
+        </div>
+    </div>
+</body>
+</html>
